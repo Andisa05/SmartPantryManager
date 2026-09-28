@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@color/colorNavBackground"
+    android:weightSum="3">
+
+    <ImageButton
+        android:id="@+id/imageButtonPantry"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/title_pantry_list"
+        android:src="@drawable/ic_nav_pantry" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRecipes"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/title_suggested_recipes"
+        android:src="@drawable/ic_nav_recipes" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/title_settings"
+        android:src="@drawable/ic_nav_settings" />
+
+</LinearLayout>

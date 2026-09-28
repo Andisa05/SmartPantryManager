@@ -1,0 +1,14 @@
+<resources>
+    <color name="colorPrimary">#2E7D32</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#FF8F00</color>
+
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#616161</color>
+
+    <color name="colorExpiringSoon">#C62828</color>
+    <color name="colorDelete">#C62828</color>
+    <color name="colorNavBackground">#1B5E20</color>
+    <color name="colorNavDisabled">#66FFFFFF</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:title="@string/title_recipe_detail"
+        android:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_standard">
+
+            <TextView
+                android:id="@+id/textRecipeDetailName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="Tomato &amp; Egg Stir-Fry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ingredients"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textRecipeDetailIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="- 2 pcs tomato\n- 3 pcs egg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Method"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textRecipeDetailSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="1. Beat the eggs." />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/navbarInclude"
+        layout="@layout/navbar_include" />
+
+</LinearLayout>
