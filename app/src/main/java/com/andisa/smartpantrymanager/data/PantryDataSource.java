@@ -230,7 +230,7 @@ public class PantryDataSource {
                     missing.add(required.getName());
                 }
             }
-
+            // no missing ingredients suggested only one missing
             recipe.setMissingIngredients(missing);
             if (missing.isEmpty()) {
                 result.suggested.add(recipe);

@@ -35,7 +35,7 @@ public final class IngredientMatcher {
         s = s.replaceAll("\\s+", " ");
         return singularize(s);
     }
-
+            //Handles simple plural endings and not a full stemmer
     private static String singularize(String s) {
         if (s.endsWith("ies") && s.length() > 3) {
             // e.g. "berries" -> "berry"
