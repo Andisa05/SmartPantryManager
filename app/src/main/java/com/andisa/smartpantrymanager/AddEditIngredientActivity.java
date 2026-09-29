@@ -160,7 +160,7 @@ public class AddEditIngredientActivity extends AppCompatActivity {
             return;
         }
 
-        if (quantity <= 0) {
+        if (quantity <= 0 ||Double.isNaN(quantity) ||Double.isInfinite(quantity)) {
             editQuantity.setError("Quantity must be greater than zero");
             editQuantity.requestFocus();
             return;
